@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Add New User - Food Waste Management</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Food Waste Management</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+        <div id="user-form">
+            <h2>Add New User</h2>
+            <form id="add-user-form">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <input type="text" id="first_name" placeholder="First Name">
+                <input type="text" id="last_name" placeholder="Last Name">
+                <input type="date" id="date_of_birth" placeholder="Date of Birth">
+                <input type="text" id="phone_number" placeholder="Phone Number">
+                <input type="text" id="address" placeholder="Address">
+                <input type="hidden" id="account_created" value="${new Date().toISOString()}">
+                <input type="text" id="role" placeholder="Role">
+                <button type="submit">Add User</button>
+            </form>
+        </div>
+        <div id="user-list">
+            <h2>Users</h2>
+            <ul id="users"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

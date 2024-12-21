@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Food Waste Data - Food Waste Management</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Food Waste Data</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="add-user.html">Add New User</a></li>
+            </ul>
+        </nav>
+        <div id="foodwaste-form">
+            <h2>Add Food Waste Data</h2>
+            <form id="add-foodwaste-form">
+                <input type="number" id="user_id" placeholder="User ID" required>
+                <input type="date" id="date_of_waste" placeholder="Date of Waste" required>
+                <input type="text" id="food_category" placeholder="Food Category" required>
+                <input type="number" id="amount_wasted" placeholder="Amount Wasted" required>
+                <input type="text" id="cause_of_waste" placeholder="Cause of Waste" required>
+                <input type="text" id="location" placeholder="Location" required>
+                <input type="text" id="disposal_method" placeholder="Disposal Method" required>
+                <button type="submit">Add Food Waste Data</button>
+            </form>
+        </div>
+        <div id="foodwaste-list">
+            <h2>Food Waste Records</h2>
+            <ul id="foodwaste-records"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
